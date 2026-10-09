@@ -9,56 +9,45 @@ redirect_from:
 
 {% include base_path %}
 
+[Download the PDF version](/files/YinghaoHe_CV.pdf)
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Ph.D. in Computer Science**, Purdue University, West Lafayette, August 2025 – present
+  * GPA 4.0/4.0
+* **B.Eng. in Software Engineering**, Tongji University, Shanghai, September 2021 – June 2025
+  * GPA 4.88/5.0, rank 4/228
+
+Research experience
+======
+* **Mitigating sycophancy and contextual stubbornness in LLMs**, Purdue University and Analogy AI, May 2026 – September 2026
+  * Developed CoPE-Bench to jointly evaluate sycophancy and contextual stubbornness across six conditions involving user pressure and contextual evidence.
+  * Proposed SPAE, a training-free attention-steering method that uses model-identified token spans to suppress user pressure and amplify contextual evidence.
+  * Evaluated SPAE across five backbones (4B to 27B) against six baselines. On Qwen3.5-9B, reduced pressure following from 24.5% to 6.0% and improved contextual updating from 50.5% to 60.2%, with no accuracy loss on no-conflict controls.
+* **Disk-based vector retrieval**, Purdue University, August 2024 – April 2026
+  * Designed and implemented a disk-based vector retrieval system using cluster-centroid indexing to support datasets exceeding memory capacity.
+  * Developed a hybrid retrieval strategy combining compressed in-memory vector representations with multiple disk-reading methods.
+  * Implemented estimated-distance filtering to exclude over 90% of candidate vectors before disk reads, reducing I/O while maintaining retrieval accuracy.
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Summer Research Intern**, [Analogy AI](https://analogyai.ai/), May 2026 – August 2026
+  * Developed the sourcing and evaluation components of an agentic pipeline that converts natural-language data requests into curated datasets for LLM training.
+  * Built agent-callable search tools across the web and specialized data platforms, alongside an agentic crawler for permitted websites, to scale raw-data collection.
+  * Designed an evaluation loop combining agent-based assessment with external validation to identify deviations from user requirements and guide iterative data curation.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Honors and awards
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* National Scholarship, Ministry of Education of China, 2021–2022 (top 1% of undergraduates nationwide)
+* First-class Scholarship, Tongji University, 2022–2023 (top 3%)
+* Merit Student, Tongji University, 2021–2022
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+Skills
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Programming languages: C/C++, Python, Java, C#, Go, R
