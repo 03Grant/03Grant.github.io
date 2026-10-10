@@ -10,7 +10,7 @@ author:
   email: he923@purdue.edu
   github: https://github.com/03Grant
   scholar:            # Google Scholar profile URL; the header shows a link once this is set
-  photo:              # e.g. images/photo.jpg; the header shows a 140px photo once this is set
+  photo: /images/photo.jpg   # leave empty for the no-photo layout
 
 collections:
   publications:
