@@ -19,8 +19,8 @@ Research interests
 
 News
 ======
-* **Oct 2026.** Released the code and data for CoPE-Bench and SPAE: [github.com/03Grant/sycophancy-and-stubbornness](https://github.com/03Grant/sycophancy-and-stubbornness).
+* **Oct 2026.** Posted the SPAE preprint on arXiv ([2610.04329](https://arxiv.org/abs/2610.04329)) and released the code and data for CoPE-Bench and SPAE: [github.com/03Grant/sycophancy-and-stubbornness](https://github.com/03Grant/sycophancy-and-stubbornness).
 * **Sep 2026.** Submitted "Suppressing Pressure, Amplifying Evidence" (first author) to ICLR 2027, with two co-authored submissions to ICLR 2027 and one to SIGMOD 2027.
 * **May 2026.** Started a summer research internship at [Analogy AI](https://analogyai.ai/), working on a self-evolving agentic data pipeline.
 * **Aug 2025.** Started my PhD in Computer Science at Purdue University.
-* **Jun 2025.** Graduated from Tongji University in Software Engineering (rank 4/228).
+* **Jun 2025.** Graduated from Tongji University in Software Engineering.
