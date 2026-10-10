@@ -1,0 +1,6 @@
+<article class="pub">
+  <p class="pub__title">{{ include.pub.title }}</p>
+  <p class="pub__authors">{{ include.pub.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+  <p class="pub__venue">{{ include.pub.venue }}</p>
+  {% if include.pub.arxiv or include.pub.code %}<p class="pub__links">{% if include.pub.arxiv %}<a href="{{ include.pub.arxiv }}">arXiv</a>{% endif %}{% if include.pub.code %}<a href="{{ include.pub.code }}">Code</a>{% endif %}</p>{% endif %}
+</article>

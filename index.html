@@ -1,0 +1,50 @@
+---
+layout: default
+permalink: /
+---
+<header class="hero">
+  <div class="hero__text">
+    <h1>{{ site.author.name }}</h1>
+    <p class="hero__role">PhD student in Computer Science, Purdue University</p>
+    <p class="hero__tagline">I work on the reliable behavior of large language models and on storage systems for AI infrastructure.</p>
+    <p class="hero__links">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      <a href="{{ site.author.github }}">GitHub</a>
+      {% if site.author.scholar %}<a href="{{ site.author.scholar }}">Google Scholar</a>{% endif %}
+      <a href="{{ '/files/YinghaoHe_CV.pdf' | relative_url }}">CV (PDF)</a>
+    </p>
+  </div>
+  {% if site.author.photo %}<img class="hero__photo" src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}">{% endif %}
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I'm passionate about interesting things! Currently I work on the reliable behavior of large language models, and I also spend a lot of time improving the performance of AI infrastructure, especially storage.</p>
+  <p>I am a second-year PhD student in Computer Science at <a href="https://www.cs.purdue.edu/">Purdue University</a>, where I started in August 2025. Before Purdue, I received my B.Eng. in Software Engineering from Tongji University (2021–2025). In summer 2026 I was a research intern at <a href="https://analogyai.ai/">Analogy AI</a>.</p>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <ul class="research">
+    <li><strong>Reliable LLM behavior.</strong> Keeping a model faithful to the evidence when the user pushes back, and willing to update when the context changes.</li>
+    <li><strong>Storage for AI infrastructure.</strong> Disk-based vector search that serves datasets larger than memory from commodity storage.</li>
+    <li><strong>Agentic data pipelines.</strong> Agents that turn a natural-language data request into a curated training set.</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  {% assign pubs = site.publications | sort: "date" | reverse %}
+  {% for pub in pubs %}{% include pub.html pub=pub %}{% endfor %}
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">
+    <li><span class="news__date">Oct 2026</span><span>Posted the SPAE preprint on arXiv (<a href="https://arxiv.org/abs/2610.04329">2610.04329</a>) and released the code and data for CoPE-Bench and SPAE on <a href="https://github.com/03Grant/sycophancy-and-stubbornness">GitHub</a>.</span></li>
+    <li><span class="news__date">Sep 2026</span><span>Submitted "Suppressing Pressure, Amplifying Evidence" (first author) to ICLR 2027, with two co-authored submissions to ICLR 2027 and one to SIGMOD 2027.</span></li>
+    <li><span class="news__date">May 2026</span><span>Started a summer research internship at <a href="https://analogyai.ai/">Analogy AI</a>, working on a self-evolving agentic data pipeline.</span></li>
+    <li><span class="news__date">Aug 2025</span><span>Started my PhD in Computer Science at Purdue University.</span></li>
+    <li><span class="news__date">Jun 2025</span><span>Graduated from Tongji University in Software Engineering.</span></li>
+  </ul>
+</section>

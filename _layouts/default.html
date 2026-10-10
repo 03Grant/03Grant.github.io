@@ -1,31 +1,24 @@
----
-layout: compress
----
-
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <nav class="nav">
+    <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} class="current"{% endif %}>Home</a>
+    <a href="{{ '/#publications' | relative_url }}">Publications</a>
+    <a href="{{ '/cv/' | relative_url }}"{% if page.url == "/cv/" %} class="current"{% endif %}>CV</a>
+  </nav>
+  <main class="page">
+{{ content }}
+  </main>
+  <footer class="footer">
+    © {{ site.time | date: "%Y" }} {{ site.author.name }} · Last updated {{ site.time | date: "%B %Y" }} · <a href="https://github.com/03Grant/03Grant.github.io">Source</a>
+  </footer>
+</body>
 </html>
