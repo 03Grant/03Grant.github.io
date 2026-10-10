@@ -45,7 +45,7 @@ a:hover { text-decoration: underline; }
 /* Header block: name, role, one-line positioning, short links */
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 32px;
   padding: 24px 0 4px;
@@ -117,7 +117,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 640px) {
   html { font-size: 16px; }
   .nav, .page, .footer { padding-left: 16px; padding-right: 16px; }
-  .hero { flex-direction: column-reverse; gap: 16px; padding-top: 12px; }
+  .hero { flex-direction: column; gap: 16px; padding-top: 12px; }
   .hero h1 { font-size: 36px; }
   .hero__photo { width: 112px; height: 112px; margin-top: 0; }
   .news li { grid-template-columns: 1fr; gap: 0; }
