@@ -9,7 +9,7 @@ redirect_from:
 
 I am a second-year PhD student in Computer Science at [Purdue University](https://www.cs.purdue.edu/), where I started in August 2025. Before Purdue, I received my B.Eng. in Software Engineering from Tongji University (2021–2025).
 
-My research is about making large language models reliable when what the user says and what the context says pull in different directions. I also work on systems for vector search and on agentic pipelines for collecting training data.
+I'm passionate about interesting things! Currently I work on the reliable behavior of large language models, and I also spend a lot of time improving the performance of AI infrastructure, especially storage.
 
 Research interests
 ======
