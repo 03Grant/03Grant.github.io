@@ -11,6 +11,7 @@ permalink: /
     <p class="hero__links">
       <a href="mailto:{{ site.author.email }}">Email</a>
       <a href="{{ site.author.github }}">GitHub</a>
+      {% if site.author.linkedin %}<a href="{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
       {% if site.author.scholar %}<a href="{{ site.author.scholar }}">Google Scholar</a>{% endif %}
       <a href="{{ '/files/YinghaoHe_CV.pdf' | relative_url }}">CV (PDF)</a>
     </p>

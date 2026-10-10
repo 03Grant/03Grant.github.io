@@ -17,7 +17,7 @@
     "email": "mailto:{{ site.author.email }}",
     "affiliation": { "@type": "CollegeOrUniversity", "name": "Purdue University", "url": "https://www.cs.purdue.edu/" },
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Tongji University" },
-    "sameAs": [ "{{ site.author.github }}"{% if site.author.scholar %}, "{{ site.author.scholar }}"{% endif %} ]
+    "sameAs": [ "{{ site.author.github }}"{% if site.author.linkedin %}, "{{ site.author.linkedin }}"{% endif %}{% if site.author.scholar %}, "{{ site.author.scholar }}"{% endif %} ]
   }
   </script>
 </head>
