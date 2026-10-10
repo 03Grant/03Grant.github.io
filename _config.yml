@@ -1,9 +1,16 @@
 # Site settings. GitHub Pages builds this with its native Jekyll; no theme, no plugins.
 title: Yinghao He
 description: Yinghao He, PhD student in Computer Science at Purdue University
+tagline: PhD student in Computer Science at Purdue University
 url: https://03grant.github.io
 baseurl: ""
 lang: en
+logo: /images/photo.jpg
+
+# Both plugins are in GitHub Pages' native build: sitemap.xml and the SEO tags in <head>.
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 author:
   name: Yinghao He

@@ -3,10 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  {% seo %}
   <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}/",
+    "image": "{{ site.logo | absolute_url }}",
+    "jobTitle": "PhD student in Computer Science",
+    "email": "mailto:{{ site.author.email }}",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Purdue University", "url": "https://www.cs.purdue.edu/" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Tongji University" },
+    "sameAs": [ "{{ site.author.github }}"{% if site.author.scholar %}, "{{ site.author.scholar }}"{% endif %} ]
+  }
+  </script>
 </head>
 <body>
   <nav class="nav">
