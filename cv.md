@@ -10,6 +10,7 @@ permalink: /cv/
 ## Education
 
 * **Ph.D. in Computer Science**, Purdue University, West Lafayette, August 2025 – present
+  * Advisor: [Prof. Bharat Bhargava](https://www.cs.purdue.edu/homes/bb/)
   * GPA 4.0/4.0
 * **B.Eng. in Software Engineering**, Tongji University, Shanghai, September 2021 – June 2025
   * GPA 4.88/5.0
